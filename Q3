@@ -1,0 +1,11 @@
+#####part a
+f<-function(commission){1000*(1-(1+i)^(-30))/i-commission}
+uniroot(f,c(1000,30000))
+
+#####part c
+f<-function(i){32622.8*(1-(1+i)^(-30))/i-(600000+18392.05)}
+uniroot(f,c(0.001,0.035))
+
+#####part d
+f<-function(pd){pd*(1-(1+0.03260808)^(-30))/0.03260808-618392.05}
+uniroot(f,c(0,40000))
